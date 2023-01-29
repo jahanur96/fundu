@@ -6,6 +6,17 @@ $('#mobile-menu').meanmenu({
 	meanMenuContainer: '.mobile-menu',
 	meanScreenWidth: "992"
 });
+//load background image
+$("[data-background]").each(function(){
+	$("[data-background]").css("background-image","url("+$(this).attr("data-background")+")")
+})
+
+// $(document).ready(function(){
+// 	$("[data-background]").each(function(){
+// 		$("[data-background]").css("background-image","url("+$(this).attr("data-background")+")")
+// 		})
+//   });
+
 
 // One Page Nav
 var top_offset = $('.header-area').height() - 10;

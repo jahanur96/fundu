@@ -23,11 +23,13 @@
 
 
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
  body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	font-style: normal;
+	color: #686893;
+	overflow-x: hidden;
 }
 .img {
 	max-width: 100%;
@@ -82,10 +84,10 @@ h5,
 h6 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: normal;
-	color: #313131;
+	color: #121121;
 	margin-top: 0px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 600;
 	text-transform: normal;
 }
 h1 a,
@@ -123,10 +125,10 @@ li {
 	list-style: none
 }
 p {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: normal;
-	line-height: 24px;
-	color: #7e7e7e;
+	line-height: 26px;
+	color: #686893;
 	margin-bottom: 15px;
 }
 hr {
@@ -181,6 +183,11 @@ label {
 }
 .separator {
 	border-top: 1px solid #f2f2f2
+}
+
+/* default */
+.ml-40{
+	margin-left: 40px;
 }
 /* button style */
 
@@ -253,6 +260,125 @@ label {
 	background: #444;
 }
 
+
+/* header section */
+.transperant-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+	top: 0;
+}
+.header-info-icon i {
+    color: #f87206;
+    font-size: 14px;
+}
+.header-info-icon {
+    /* float: left; */
+	margin-right: 15px;
+}
+
+.header-info-text span {
+    color: #969f9c;
+    display: block;
+    margin-bottom: 10px;
+}
+.header-info-text h4 {
+    color: #fff;
+	font-size: 18px;
+	margin: 0;
+}
+.header-info ul li{
+	display: inline-block;
+	margin-right: 40px;
+}
+.login-header a {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.login-header a i{
+	margin-right: 3px;
+}
+.menu-box{
+	border: 2px solid #777781;
+	padding:  0 38px;
+}
+.f-btn {
+    background: #ec6e39;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 13px;
+	line-height: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 30px;
+    display: inline-block;
+}
+.f-btn>a{
+	color: #fff;
+}
+.main-menu ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-menu ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 30px 0px;
+}
+
+.main-menu ul li .submenu {
+    position: absolute;
+    background: #fff;
+    width: 230px;
+    padding: 10px 0;
+    border-top: 4px solid #ec6e39;
+    opacity: 0;
+    visibility: hidden;
+	transition: 0.5s;
+	top: 110%;
+}
+.main-menu ul li .submenu  li{
+	display: block;
+	margin: 0;
+}
+.main-menu ul li> .submenu li a {
+    color: #111;
+    padding: 10px 25px;
+}
+.main-menu ul li:hover>.submenu  {
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+.main-menu ul li:hover>a  {
+	color: #ec6e39;
+}
+.main-menu ul li .submenu  li:hover>a{
+	color: #ec6e39;
+	background: #ddd;
+}
+.hero-area{
+	min-height: 1020px;
+}
+.hero-wrapper a {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    background: #ec6e39;
+    line-height: 80px;
+    color: #fff;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+.hero-wrapper h2{
+	font-size: 80px;
+	color: #fff;
+}
 
 
 
